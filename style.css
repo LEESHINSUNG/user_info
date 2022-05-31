@@ -1,0 +1,90 @@
+:root{
+  --color-main : linear-gradient(137deg, #9591de 0%, #7d7dfc 42%, #62dbf4 100%);
+  --color-shadow :#505050;
+  --color-border : #e8e8e8;
+  --color-text :#141937;
+}
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background: gray;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: var(--color-main);
+  width: 28em;
+  height: 35em;
+  padding: 3em;
+  border-radius: 100px;
+  box-shadow: 5px 5px 20px var(--color-shadow);
+}
+
+.userMainInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainInfo {
+  text-align: end;
+  height: 100%;
+  width: 10em;
+  color: var(--color-text);
+}
+
+picture {
+  width: 150px;
+  height: 150px;
+  border: 7px solid var(--color-border);
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px var(--color-shadow);
+}
+
+img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.userName,.userId {
+  padding-right: 0.5em;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+  margin-top : 3em;
+  padding: 10px 0px 0px 0px;
+  text-align: center;
+  border: 7px solid var(--color-border);
+  border-radius: 20px;
+}
+
+li {
+  list-style: none;
+  color : var(--color-border);
+}
+
+.nation:hover,
+.birthday:hover,
+.phoneNum:hover,
+.location:hover,
+.email:hover {
+  text-shadow: 1px 1px 5px var(--color-shadow);
+  color: #fbf478;
+  transition : 0.3s
+}
+
+.displayData {
+  height: 10em;
+  border: 7px solid var(--color-border);
+  border-radius: 20px;
+  color: var(--color-text);
+  text-align: center;
+  padding: 1em;
+}
