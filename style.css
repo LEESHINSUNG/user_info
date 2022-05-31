@@ -51,7 +51,7 @@ img {
   height: 100%;
 }
 
-.userName,.userId {
+.userName,.userGender {
   padding-right: 0.5em;
 }
 
@@ -80,11 +80,22 @@ li {
   transition : 0.3s
 }
 
-.displayData {
-  height: 10em;
+.display {
+  height: 8em;
   border: 7px solid var(--color-border);
   border-radius: 20px;
   color: var(--color-text);
   text-align: center;
   padding: 1em;
+  font-size: 1.1em;
+}
+
+.displayData {
+  margin: 0;
+}
+
+.explanation {
+  margin: 0;
+  font-size: 0.7em;
+  color: #505050;
 }
