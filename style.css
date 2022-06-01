@@ -26,6 +26,7 @@ main {
 }
 
 .userMainInfo {
+  padding: 0em 0em 0em 1em;
   display: flex;
   justify-content: space-between;
 }
@@ -81,12 +82,12 @@ li {
 }
 
 .display {
-  height: 8em;
+  height: 9em;
   border: 7px solid var(--color-border);
   border-radius: 20px;
   color: var(--color-text);
   text-align: center;
-  padding: 1em;
+  padding: 1.4em 1em 1em 1em;
   font-size: 1.1em;
 }
 
